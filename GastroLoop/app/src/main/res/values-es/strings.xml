@@ -1,0 +1,46 @@
+
+<resources>
+    <string name="app_name">GastroLoop</string>
+
+    <!-- Home -->
+    <string name="home_title">Descubre ofertas de comida</string>
+    <string name="home_subtitle">Salva comida y ahorra dinero</string>
+    <string name="search_hint">Buscar ofertas de comida</string>
+    <string name="available_offers">Ofertas disponibles</string>
+    <string name="no_offers">No hay ofertas disponibles</string>
+
+    <!-- Food offers -->
+    <string name="food_details">Detalles de la comida</string>
+    <string name="original_price">Precio original</string>
+    <string name="discounted_price">Precio con descuento</string>
+    <string name="discount">Descuento</string>
+    <string name="you_save">Ahorras</string>
+    <string name="quantity_available">Cantidad disponible</string>
+    <string name="pickup_time">Horario de retiro</string>
+    <string name="offer_unavailable">Oferta no disponible</string>
+
+    <!-- Restaurants -->
+    <string name="restaurants">Restaurantes</string>
+    <string name="restaurant_details">Detalles del restaurante</string>
+    <string name="restaurant_address">Dirección</string>
+    <string name="restaurant_phone">Número de teléfono</string>
+    <string name="view_location">Ver ubicación</string>
+    <string name="restaurant_offers">Ofertas del restaurante</string>
+
+    <!-- Categories and filters -->
+    <string name="categories">Categorías</string>
+    <string name="all_categories">Todas las categorías</string>
+    <string name="filters">Filtros</string>
+    <string name="apply_filters">Aplicar filtros</string>
+    <string name="clear_filters">Limpiar filtros</string>
+    <string name="fast_food">Comida rápida</string>
+    <string name="traditional_food">Comida típica</string>
+    <string name="desserts">Postres</string>
+    <string name="drinks">Bebidas</string>
+
+    <!-- General -->
+    <string name="loading">Cargando...</string>
+    <string name="error_message">Ocurrió un error</string>
+    <string name="retry">Intentar de nuevo</string>
+    <string name="back">Volver</string>
+</resources>
