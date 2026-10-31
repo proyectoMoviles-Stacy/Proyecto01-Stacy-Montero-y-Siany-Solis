@@ -33,7 +33,6 @@
     <!-- Restaurants -->
     <string name="restaurants">Restaurants</string>
     <string name="restaurant_details">Restaurant details</string>
-    <string name="restaurant_address">Address</string>
     <string name="restaurant_phone">Phone number</string>
     <string name="view_location">View location</string>
     <string name="restaurant_offers">Restaurant offers</string>
@@ -54,4 +53,31 @@
     <string name="error_message">Something went wrong</string>
     <string name="retry">Try again</string>
     <string name="back">Back</string>
+
+
+    <string name="add_to_cart">Add to cart</string>
+    <string name="food_image_description">Food image</string>
+
+
+    <string name="cart_title">My cart</string>
+    <string name="cart_quantity">Quantity: 1</string>
+    <string name="cart_total">Total</string>
+    <string name="continue_to_payment">Continue to payment</string>
+
+
+    <string name="payment_title">Payment method</string>
+    <string name="payment_method">Select a payment method</string>
+    <string name="payment_cash">Cash at pickup</string>
+    <string name="payment_card">Card</string>
+    <string name="confirm_payment">Confirm payment</string>
+
+
+    <string name="location_title">Location</string>
+    <string name="location_description">Find the restaurant where you can pick up your food.</string>
+    <string name="map_description">Restaurant location map</string>
+    <string name="restaurant_location">Restaurant location</string>
+    <string name="restaurant_address">Restaurant address pending</string>
+    <string name="back_home">Back to home</string>
+
+
 </resources>

@@ -39,7 +39,6 @@
     <!-- Restaurants -->
     <string name="restaurants">Restaurantes</string>
     <string name="restaurant_details">Detalles del restaurante</string>
-    <string name="restaurant_address">Dirección</string>
     <string name="restaurant_phone">Número de teléfono</string>
     <string name="view_location">Ver ubicación</string>
     <string name="restaurant_offers">Ofertas del restaurante</string>
@@ -60,6 +59,31 @@
     <string name="error_message">Ocurrió un error</string>
     <string name="retry">Intentar de nuevo</string>
     <string name="back">Volver</string>
+
+
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="food_image_description">Imagen de comida</string>
+
+
+    <string name="cart_title">Mi carrito</string>
+    <string name="cart_quantity">Cantidad: 1</string>
+    <string name="cart_total">Total</string>
+    <string name="continue_to_payment">Continuar al pago</string>
+
+
+    <string name="payment_title">Forma de pago</string>
+    <string name="payment_method">Seleccioná una forma de pago</string>
+    <string name="payment_cash">Efectivo al retirar</string>
+    <string name="payment_card">Tarjeta</string>
+    <string name="confirm_payment">Confirmar pago</string>
+
+
+    <string name="location_title">Ubicación</string>
+    <string name="location_description">Encontrá el restaurante donde podés retirar tu comida.</string>
+    <string name="map_description">Mapa de ubicación del restaurante</string>
+    <string name="restaurant_location">Ubicación del restaurante</string>
+    <string name="restaurant_address">Dirección del restaurante pendiente</string>
+    <string name="back_home">Volver al inicio</string>
 
 
 </resources>

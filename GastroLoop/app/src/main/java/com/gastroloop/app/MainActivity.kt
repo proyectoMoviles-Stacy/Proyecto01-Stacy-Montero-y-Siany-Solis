@@ -28,5 +28,30 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
         }
 
+
+        val btnFoodDetail = findViewById<Button>(R.id.btnFoodDetail)
+
+        btnFoodDetail.setOnClickListener {
+            val intent = Intent(this, FoodDetailActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val btnCart = findViewById<Button>(R.id.btnCart)
+
+        btnCart.setOnClickListener {
+            val intent = Intent(this, CartActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val btnLocation = findViewById<Button>(R.id.btnLocation)
+
+        btnLocation.setOnClickListener {
+            val intent = Intent(this, LocationActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
