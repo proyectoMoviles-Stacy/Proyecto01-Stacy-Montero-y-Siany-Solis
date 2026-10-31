@@ -24,6 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".OffersActivity" />
+        <activity
+            android:name=".FiltersActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

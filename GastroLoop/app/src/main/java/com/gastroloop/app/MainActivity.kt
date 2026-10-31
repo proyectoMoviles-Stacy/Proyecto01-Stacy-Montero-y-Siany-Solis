@@ -19,5 +19,14 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, OffersActivity::class.java)
             startActivity(intent)
         }
+
+
+        val btnFilters = findViewById<Button>(R.id.btnFilters)
+
+        btnFilters.setOnClickListener {
+            val intent = Intent(this, FiltersActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFF9F4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filters"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#45281F" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/categories"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkFastFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fast_food" />
+
+    <CheckBox
+        android:id="@+id/checkTraditionalFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/traditional_food" />
+
+    <CheckBox
+        android:id="@+id/checkDesserts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desserts" />
+
+    <CheckBox
+        android:id="@+id/checkDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/drinks" />
+
+    <Button
+        android:id="@+id/btnApplyFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/apply_filters" />
+
+    <Button
+        android:id="@+id/btnClearFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_filters" />
+
+</LinearLayout>
