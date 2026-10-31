@@ -5,25 +5,21 @@ import androidx.lifecycle.ViewModel
 import com.gastroloop.app.data.memory.MemoryReservationRepository
 import com.gastroloop.app.domain.model.Reservation
 import com.gastroloop.app.domain.repository.ReservationRepository
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 
 class ReservationViewModel(
     private val repository: ReservationRepository =
         MemoryReservationRepository()
 ) : ViewModel() {
 
-    private val _reservations =
-        MutableStateFlow<List<Reservation>>(emptyList())
-
-    val reservations: StateFlow<List<Reservation>> = _reservations
+    var reservations: List<Reservation> = emptyList()
+        private set
 
     init {
         loadReservations()
     }
 
     fun loadReservations() {
-        _reservations.value = repository.getAllReservations()
+        reservations = repository.getAllReservations()
     }
 
     fun addReservation(reservation: Reservation): Boolean {
@@ -57,7 +53,6 @@ class ReservationViewModel(
     }
 
     fun filterByStatus(status: String) {
-        _reservations.value =
-            repository.getReservationsByStatus(status)
+        reservations = repository.getReservationsByStatus(status)
     }
 }

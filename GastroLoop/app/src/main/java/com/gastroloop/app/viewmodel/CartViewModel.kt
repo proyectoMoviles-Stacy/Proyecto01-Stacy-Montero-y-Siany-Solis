@@ -3,25 +3,20 @@ package com.gastroloop.app.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.gastroloop.app.domain.model.CartItem
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 
 class CartViewModel : ViewModel() {
 
-    private val _cartItems =
-        MutableStateFlow<List<CartItem>>(emptyList())
+    var cartItems: List<CartItem> = emptyList()
+        private set
 
-    val cartItems: StateFlow<List<CartItem>> = _cartItems
-
-    private val _total = MutableStateFlow(0.0)
-
-    val total: StateFlow<Double> = _total
+    var total: Double = 0.0
+        private set
 
     fun addItem(item: CartItem) {
         require(item.quantity > 0)
         require(item.unitPrice >= 0)
 
-        val existingItem = _cartItems.value.find {
+        val existingItem = cartItems.find {
             it.foodOfferId == item.foodOfferId
         }
 
@@ -31,7 +26,7 @@ class CartViewModel : ViewModel() {
                 existingItem.quantity + item.quantity
             )
         } else {
-            _cartItems.value = _cartItems.value + item
+            cartItems = cartItems + item
             calculateTotal()
         }
     }
@@ -42,7 +37,7 @@ class CartViewModel : ViewModel() {
             return
         }
 
-        _cartItems.value = _cartItems.value.map {
+        cartItems = cartItems.map {
             if (it.id == itemId) {
                 it.copy(quantity = quantity)
             } else {
@@ -54,7 +49,7 @@ class CartViewModel : ViewModel() {
     }
 
     fun removeItem(itemId: Int) {
-        _cartItems.value = _cartItems.value.filter {
+        cartItems = cartItems.filter {
             it.id != itemId
         }
 
@@ -62,12 +57,12 @@ class CartViewModel : ViewModel() {
     }
 
     fun clearCart() {
-        _cartItems.value = emptyList()
+        cartItems = emptyList()
         calculateTotal()
     }
 
     private fun calculateTotal() {
-        _total.value = _cartItems.value.sumOf {
+        total = cartItems.sumOf {
             it.subtotal
         }
     }

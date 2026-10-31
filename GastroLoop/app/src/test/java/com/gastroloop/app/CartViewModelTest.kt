@@ -1,3 +1,4 @@
+git status
 
 package com.gastroloop.app
 
@@ -27,8 +28,8 @@ class CartViewModelTest {
     fun addItemSuccessfully() {
         viewModel.addItem(sampleItem())
 
-        assertEquals(1, viewModel.cartItems.value.size)
-        assertEquals(4000.0, viewModel.total.value, 0.01)
+        assertEquals(1, viewModel.cartItems.size)
+        assertEquals(4000.0, viewModel.total, 0.01)
     }
 
     @Test
@@ -36,8 +37,8 @@ class CartViewModelTest {
         viewModel.addItem(sampleItem())
         viewModel.updateQuantity(1, 3)
 
-        assertEquals(3, viewModel.cartItems.value.first().quantity)
-        assertEquals(6000.0, viewModel.total.value, 0.01)
+        assertEquals(3, viewModel.cartItems.first().quantity)
+        assertEquals(6000.0, viewModel.total, 0.01)
     }
 
     @Test
@@ -45,8 +46,8 @@ class CartViewModelTest {
         viewModel.addItem(sampleItem())
         viewModel.removeItem(1)
 
-        assertTrue(viewModel.cartItems.value.isEmpty())
-        assertEquals(0.0, viewModel.total.value, 0.01)
+        assertTrue(viewModel.cartItems.isEmpty())
+        assertEquals(0.0, viewModel.total, 0.01)
     }
 
     @Test
@@ -54,8 +55,8 @@ class CartViewModelTest {
         viewModel.addItem(sampleItem())
         viewModel.clearCart()
 
-        assertTrue(viewModel.cartItems.value.isEmpty())
-        assertEquals(0.0, viewModel.total.value, 0.01)
+        assertTrue(viewModel.cartItems.isEmpty())
+        assertEquals(0.0, viewModel.total, 0.01)
     }
 
     @Test
@@ -63,8 +64,8 @@ class CartViewModelTest {
         viewModel.addItem(sampleItem())
         viewModel.addItem(sampleItem())
 
-        assertEquals(1, viewModel.cartItems.value.size)
-        assertEquals(4, viewModel.cartItems.value.first().quantity)
-        assertEquals(8000.0, viewModel.total.value, 0.01)
+        assertEquals(1, viewModel.cartItems.size)
+        assertEquals(4, viewModel.cartItems.first().quantity)
+        assertEquals(8000.0, viewModel.total, 0.01)
     }
 }
