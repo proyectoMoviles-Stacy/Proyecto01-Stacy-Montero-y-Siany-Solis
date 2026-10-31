@@ -1,5 +1,9 @@
 
 <resources>
+    <string name="offers_message">Próximamente verás las ofertas disponibles</string>
+    <string name="welcome_message">¡Bienvenido a GastroLoop!</string>
+    <string name="view_offers">Ver ofertas disponibles</string>
+
     <string name="app_name">GastroLoop</string>
 
     <!-- Home -->

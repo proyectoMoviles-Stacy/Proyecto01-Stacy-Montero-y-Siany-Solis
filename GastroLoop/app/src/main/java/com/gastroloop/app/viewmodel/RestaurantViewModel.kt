@@ -5,69 +5,57 @@ import androidx.lifecycle.ViewModel
 import com.gastroloop.app.domain.model.Restaurant
 import com.gastroloop.app.domain.model.FoodOffer
 import com.gastroloop.app.domain.repository.FoodRepository
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
 
 class RestaurantViewModel(
     private val repository: FoodRepository
 ) : ViewModel() {
 
-    private val _restaurants =
-        MutableStateFlow<List<Restaurant>>(emptyList())
+    var restaurants: List<Restaurant> = emptyList()
+        private set
 
-    val restaurants: StateFlow<List<Restaurant>> =
-        _restaurants.asStateFlow()
+    var selectedRestaurant: Restaurant? = null
+        private set
 
-    private val _selectedRestaurant =
-        MutableStateFlow<Restaurant?>(null)
-
-    val selectedRestaurant: StateFlow<Restaurant?> =
-        _selectedRestaurant.asStateFlow()
-
-    private val _restaurantOffers =
-        MutableStateFlow<List<FoodOffer>>(emptyList())
-
-    val restaurantOffers: StateFlow<List<FoodOffer>> =
-        _restaurantOffers.asStateFlow()
+    var restaurantOffers: List<FoodOffer> = emptyList()
+        private set
 
     init {
         loadRestaurants()
     }
 
     fun loadRestaurants() {
-        _restaurants.value = repository.getRestaurants()
-            .filter { it.isActive }
+        restaurants = repository.getRestaurants().filter {
+            it.isActive
+        }
     }
 
     fun selectRestaurant(restaurantId: Int) {
         val restaurant = repository.getRestaurantById(restaurantId)
-            ?.takeIf { it.isActive }
 
-        _selectedRestaurant.value = restaurant
+        if (restaurant != null && restaurant.isActive) {
+            selectedRestaurant = restaurant
 
-        _restaurantOffers.value = if (restaurant != null) {
-            repository.getOffersByRestaurant(restaurantId)
+            restaurantOffers = repository
+                .getOffersByRestaurant(restaurantId)
                 .filter {
                     it.isAvailable && it.quantityAvailable > 0
                 }
         } else {
-            emptyList()
+            selectedRestaurant = null
+            restaurantOffers = emptyList()
         }
     }
 
     fun searchRestaurants(query: String) {
-        _restaurants.value = repository.getRestaurants()
-            .filter {
-                it.isActive &&
-                        (it.name.contains(query, ignoreCase = true) ||
-                                it.address.contains(query, ignoreCase = true))
-            }
+        restaurants = repository.getRestaurants().filter {
+            it.isActive &&
+                    (it.name.contains(query, ignoreCase = true) ||
+                            it.address.contains(query, ignoreCase = true))
+        }
     }
 
     fun clearSelection() {
-        _selectedRestaurant.value = null
-        _restaurantOffers.value = emptyList()
+        selectedRestaurant = null
+        restaurantOffers = emptyList()
     }
 }
-
