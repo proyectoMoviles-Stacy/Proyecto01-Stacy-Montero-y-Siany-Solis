@@ -9,9 +9,22 @@
     <!-- Home -->
     <string name="home_title">Descubre ofertas de comida</string>
     <string name="home_subtitle">Salva comida y ahorra dinero</string>
-    <string name="search_hint">Buscar ofertas de comida</string>
+    <string name="search_hint">Buscar comida o restaurante</string>
     <string name="available_offers">Ofertas disponibles</string>
     <string name="no_offers">No hay ofertas disponibles</string>
+
+    <string name="home_discount_title">Ahorrá hasta un 25%</string>
+    <string name="home_discount_subtitle">Ofertas listas para retirar cerca de vos</string>
+
+    <string name="burger_name">Hamburguesa sencilla</string>
+    <string name="burger_price">₡2.030</string>
+
+    <string name="pizza_name">Pizza personal</string>
+    <string name="pizza_price">₡2.900</string>
+
+    <string name="second_chance_title">¡Comida con segunda oportunidad!</string>
+    <string name="second_chance_description">Reservá y retirá directamente en el local. Menos desperdicio, más ahorro.</string>
+
 
     <!-- Food offers -->
     <string name="food_details">Detalles de la comida</string>
@@ -47,4 +60,6 @@
     <string name="error_message">Ocurrió un error</string>
     <string name="retry">Intentar de nuevo</string>
     <string name="back">Volver</string>
+
+
 </resources>

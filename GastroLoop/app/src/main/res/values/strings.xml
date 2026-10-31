@@ -12,6 +12,14 @@
     <string name="search_hint">Search food offers</string>
     <string name="available_offers">Available offers</string>
     <string name="no_offers">No offers available</string>
+    <string name="home_discount_title">Save up to 25%</string>
+    <string name="home_discount_subtitle">Offers ready for pickup near you</string>
+    <string name="burger_name">Simple burger</string>
+    <string name="burger_price">₡2.030</string>
+    <string name="pizza_name">Personal pizza</string>
+    <string name="pizza_price">₡2.900</string>
+    <string name="second_chance_title">Food deserves a second chance!</string>
+    <string name="second_chance_description">Reserve and pick up directly at the restaurant. Less waste, more savings.</string>
 
     <!-- Food offers -->
     <string name="food_details">Food details</string>
