@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF9F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Encabezado -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_screen_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/payment_subtitle"
+            android:textSize="12sp"
+            android:textColor="#8B7B73" />
+
+        <!-- Método de pago -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/payment_method"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <!-- Pagar al retirar -->
+
+        <!-- Opciones de pago -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Pagar al retirar -->
+            <RadioButton
+                android:id="@+id/radioPickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="65dp"
+                android:padding="12dp"
+                android:text="@string/payment_pickup_option"
+                android:textColor="#45281F"
+                android:textSize="14sp"
+                android:buttonTint="#C45C42"
+                android:background="@drawable/card_background"
+                android:checked="true" />
+
+            <!-- SINPE Móvil -->
+            <RadioButton
+                android:id="@+id/radioSinpe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="65dp"
+                android:padding="12dp"
+                android:text="@string/payment_sinpe_option"
+                android:textColor="#45281F"
+                android:textSize="14sp"
+                android:buttonTint="#C45C42"
+                android:background="@drawable/card_background" />
+
+            <!-- Tarjeta -->
+            <RadioButton
+                android:id="@+id/radioCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="65dp"
+                android:padding="12dp"
+                android:text="@string/payment_card_option"
+                android:textColor="#45281F"
+                android:textSize="14sp"
+                android:buttonTint="#C45C42"
+                android:background="@drawable/card_background" />
+
+        </RadioGroup>
+
+
+        <!-- Total del pedido -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/second_chance_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/payment_order_total"
+                    android:textStyle="bold"
+                    android:textColor="#45281F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_total_value"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#C45C42" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/payment_information"
+                android:textSize="13sp"
+                android:textColor="#45281F" />
+
+        </LinearLayout>
+
+        <!-- Botón final -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/payment_review_reservation"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C45C42" />
+
+    </LinearLayout>
+</ScrollView>
