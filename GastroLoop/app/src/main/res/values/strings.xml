@@ -80,4 +80,76 @@
     <string name="back_home">Back to home</string>
 
 
+    <string name="burger_restaurant">Burger King</string>
+    <string name="pizza_restaurant">Pizzeria Central</string>
+    <string name="burger_original_price">₡3.500</string>
+    <string name="pizza_original_price">₡5.000</string>
+    <string name="discount_percentage">-42% savings</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_restaurants">Restaurants</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_profile">Profile</string>
+
+
+    <string name="filter_screen_title">‹  Search and filter</string>
+    <string name="filter_question">What are you craving?</string>
+    <string name="filter_search_hint">Burger, pizza, traditional food...</string>
+    <string name="food_type">Food type</string>
+    <string name="filter_all">All</string>
+    <string name="filter_fast">Fast</string>
+    <string name="filter_traditional">Traditional</string>
+    <string name="filter_pizza">Pizza</string>
+    <string name="price_range">Price range</string>
+    <string name="filter_price_values">₡1,000                                      ₡5,000</string>
+    <string name="filter_location_value">Downtown Puntarenas</string>
+    <string name="filter_availability">Availability</string>
+    <string name="filter_available_only">Only available offers</string>
+
+
+    <string name="detail_screen_title">‹  Offer details</string>
+    <string name="offer_label">OFFER</string>
+    <string name="detail_restaurant">Burger King · Fast food</string>
+    <string name="price_before">Before</string>
+    <string name="price_now">Now</string>
+    <string name="detail_description_title">Description</string>
+    <string name="detail_description">Hamburger with cheese, fries and a drink. Prepared and preserved by the restaurant.</string>
+    <string name="detail_pickup_title">Pickup at Burger King</string>
+    <string name="detail_pickup_time">Available until 7:30 p.m.</string>
+    <string name="quantity_display">−    1    +</string>
+
+
+    <string name="restaurant_location_title">‹  Restaurant and location</string>
+    <string name="restaurant_category_location">Fast food · Puntarenas</string>
+    <string name="restaurant_full_address">Puntarenas downtown, Costa Rica</string>
+    <string name="restaurant_pickup_note">In-person order pickup</string>
+    <string name="map_section_title">Location on the map</string>
+    <string name="view_restaurant_offers">View restaurant offers</string>
+
+
+    <string name="cart_screen_title">‹  My cart</string>
+    <string name="cart_subtitle">Review your products before booking.</string>
+    <string name="cart_quantity_controls">− 1 +</string>
+    <string name="cart_order_summary">Order summary</string>
+    <string name="cart_subtotal">Subtotal (2 products)                      ₡4,930</string>
+    <string name="cart_service_fee">Service fee                                  ₡0</string>
+    <string name="cart_total_amount">Total to pay                          ₡4,930</string>
+
+
+    <string name="payment_screen_title">‹  Payment method</string>
+    <string name="payment_subtitle">Choose how you want to pay for your reservation.</string>
+    <string name="payment_pickup">Pay at pickup</string>
+    <string name="payment_pickup_description">Cash or accepted payment method at the restaurant</string>
+    <string name="payment_sinpe">SINPE Móvil</string>
+    <string name="payment_sinpe_description">Payment arranged with the restaurant</string>
+    <string name="payment_card_description">Future option; requires a payment gateway</string>
+    <string name="payment_order_total">Order total</string>
+    <string name="payment_total_value">₡4,930</string>
+    <string name="payment_information">Payment is made at the restaurant if you choose to pay at pickup.</string>
+    <string name="payment_review_reservation">Review and confirm reservation</string>
+
+    <string name="payment_pickup_option">Pay at pickup\nCash or payment method accepted at the restaurant</string>
+    <string name="payment_sinpe_option">SINPE Móvil\nPayment arranged with the restaurant</string>
+    <string name="payment_card_option">Card\nFuture option; requires a payment gateway</string>
+
+
 </resources>

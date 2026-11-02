@@ -86,4 +86,76 @@
     <string name="back_home">Volver al inicio</string>
 
 
+    <string name="burger_restaurant">Burger King</string>
+    <string name="pizza_restaurant">Pizzería Central</string>
+    <string name="burger_original_price">₡3.500</string>
+    <string name="pizza_original_price">₡5.000</string>
+    <string name="discount_percentage">-42% de ahorro</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_restaurants">Restaurantes</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_profile">Perfil</string>
+
+
+    <string name="filter_screen_title">‹  Buscar y filtrar</string>
+    <string name="filter_question">¿Qué se te antoja?</string>
+    <string name="filter_search_hint">Hamburguesa, pizza, casado...</string>
+    <string name="food_type">Tipo de comida</string>
+    <string name="filter_all">Todas</string>
+    <string name="filter_fast">Rápida</string>
+    <string name="filter_traditional">Típica</string>
+    <string name="filter_pizza">Pizza</string>
+    <string name="price_range">Rango de precio</string>
+    <string name="filter_price_values">₡1.000                                      ₡5.000</string>
+    <string name="filter_location_value">Puntarenas centro</string>
+    <string name="filter_availability">Disponibilidad</string>
+    <string name="filter_available_only">Solo ofertas disponibles</string>
+
+
+    <string name="detail_screen_title">‹  Detalle de la oferta</string>
+    <string name="offer_label">OFERTA</string>
+    <string name="detail_restaurant">Burger King · Comida rápida</string>
+    <string name="price_before">Antes</string>
+    <string name="price_now">Ahora</string>
+    <string name="detail_description_title">Descripción</string>
+    <string name="detail_description">Hamburguesa con queso, papas y bebida. Preparado y conservado por el restaurante.</string>
+    <string name="detail_pickup_title">Retiro en Burger King</string>
+    <string name="detail_pickup_time">Disponible hasta las 7:30 p. m.</string>
+    <string name="quantity_display">−    1    +</string>
+
+
+    <string name="restaurant_location_title">‹  Restaurante y ubicación</string>
+    <string name="restaurant_category_location">Comida típica y rápida · Puntarenas</string>
+    <string name="restaurant_full_address">Puntarenas centro, Costa Rica</string>
+    <string name="restaurant_pickup_note">Retiro presencial de pedidos</string>
+    <string name="map_section_title">Ubicación en el mapa</string>
+    <string name="view_restaurant_offers">Ver ofertas del restaurante</string>
+
+
+    <string name="cart_screen_title">‹  Mi carrito</string>
+    <string name="cart_subtitle">Revisá tus productos antes de reservar.</string>
+    <string name="cart_quantity_controls">− 1 +</string>
+    <string name="cart_order_summary">Resumen del pedido</string>
+    <string name="cart_subtotal">Subtotal (2 productos)                      ₡4.930</string>
+    <string name="cart_service_fee">Tarifa de servicio                                  ₡0</string>
+    <string name="cart_total_amount">Total a pagar                          ₡4.930</string>
+
+
+    <string name="payment_screen_title">‹  Forma de pago</string>
+    <string name="payment_subtitle">Elegí cómo querés pagar tu reserva.</string>
+    <string name="payment_pickup">Pagar al retirar</string>
+    <string name="payment_pickup_description">Efectivo o método aceptado por el local</string>
+    <string name="payment_sinpe">SINPE Móvil</string>
+    <string name="payment_sinpe_description">Pago coordinado con el restaurante</string>
+    <string name="payment_card_description">Opción futura; requiere pasarela</string>
+    <string name="payment_order_total">Total del pedido</string>
+    <string name="payment_total_value">₡4.930</string>
+    <string name="payment_information">El cobro se realiza en el restaurante si elegís pagar al retirar.</string>
+    <string name="payment_review_reservation">Revisar y confirmar reserva</string>
+
+    <string name="payment_pickup_option">Pagar al retirar\nEfectivo o método aceptado por el local</string>
+    <string name="payment_sinpe_option">SINPE Móvil\nPago coordinado con el restaurante</string>
+    <string name="payment_card_option">Tarjeta\nOpción futura; requiere pasarela</string>
+
+
 </resources>
