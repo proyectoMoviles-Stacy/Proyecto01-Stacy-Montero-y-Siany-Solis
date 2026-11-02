@@ -152,4 +152,103 @@
     <string name="payment_card_option">Card\nFuture option; requires a payment gateway</string>
 
 
+    <!-- Login screen -->
+    <string name="login_welcome">Great to see you!</string>
+    <string name="login_subtitle">Sign in to reserve your food.</string>
+    <string name="login_email">Email address</string>
+    <string name="login_email_hint">email@example.com</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_hint">Enter your password</string>
+    <string name="login_forgot_password">Forgot your password?</string>
+    <string name="login_button">Sign in</string>
+    <string name="login_or">or</string>
+    <string name="login_no_account">Dont have an account yet?</string>
+    <string name="login_create_account">Create account</string>
+    <string name="login_note">You only need an account to make a reservation.</string>
+
+
+    <!-- Register screen -->
+    <string name="register_back">Back</string>
+    <string name="register_title">Create an account</string>
+    <string name="register_subtitle">Sign up to reserve offers on GastroLoop.</string>
+    <string name="register_full_name">Full name</string>
+    <string name="register_name_hint">Your first and last name</string>
+    <string name="register_email">Email address</string>
+    <string name="register_email_hint">email@example.com</string>
+    <string name="register_phone">Phone number</string>
+    <string name="register_phone_hint">8888-8888</string>
+    <string name="register_password">Password</string>
+    <string name="register_password_hint">At least 8 characters</string>
+    <string name="register_confirm_password">Confirm password</string>
+    <string name="register_confirm_hint">Repeat your password</string>
+    <string name="register_terms">I accept the terms and conditions</string>
+    <string name="register_button">Sign up</string>
+    <string name="register_login_link">Already have an account? Sign in</string>
+
+
+    <!-- Profile screen -->
+    <string name="profile_title">My profile</string>
+    <string name="profile_initials">SC</string>
+    <string name="profile_account">My account</string>
+    <string name="profile_email">cliente@ejemplo.com</string>
+    <string name="profile_my_data">My information</string>
+    <string name="profile_my_data_subtitle">Name, email and phone number</string>
+    <string name="profile_reservations">My reservations</string>
+    <string name="profile_reservations_subtitle">Order history and status</string>
+    <string name="profile_favorites">Favorite restaurants</string>
+    <string name="profile_favorites_subtitle">Places you saved</string>
+    <string name="profile_addresses">Addresses</string>
+    <string name="profile_addresses_subtitle">Locations to check</string>
+    <string name="profile_logout">Log out</string>
+
+
+    <!-- Reservations screen -->
+    <string name="reservations_title">My reservations</string>
+    <string name="reservation_first_id">GL-2026-001</string>
+    <string name="reservation_pending">Pending</string>
+    <string name="reservation_first_food">Classic hamburger</string>
+    <string name="reservation_first_restaurant">Burger King</string>
+    <string name="reservation_first_total">Total: ₡2,030</string>
+    <string name="reservation_view_detail">View details</string>
+    <string name="reservation_second_id">GL-2026-002</string>
+    <string name="reservation_completed">Picked up</string>
+    <string name="reservation_second_food">Personal pizza</string>
+    <string name="reservation_second_restaurant">Pizzería Central</string>
+    <string name="reservation_second_total">Total: ₡2,900</string>
+
+
+    <!-- Confirm reservation screen -->
+    <string name="confirm_reservation_title">Confirm reservation</string>
+    <string name="confirm_review_details">Review the details</string>
+    <string name="confirm_product_count">2 products</string>
+    <string name="confirm_first_product">Classic hamburger</string>
+    <string name="confirm_first_price">₡2,030</string>
+    <string name="confirm_second_product">Personal pizza</string>
+    <string name="confirm_second_price">₡2,900</string>
+    <string name="confirm_total_label">Total</string>
+    <string name="confirm_total_amount">₡4,930</string>
+    <string name="confirm_payment_method">Pay at pickup</string>
+    <string name="confirm_important_title">Important</string>
+    <string name="confirm_important_message">These products are from two different restaurants. Each order must be picked up at its restaurant.</string>
+    <string name="confirm_question">Confirm reservation?</string>
+    <string name="confirm_explanation">The items will be reserved until they are available. Each restaurant will validate its order.</string>
+    <string name="confirm_yes_button">Yes, confirm</string>
+    <string name="confirm_cancel_button">Cancel</string>
+
+
+    <!-- Reservation success screen -->
+    <string name="success_title">Reservation requested!</string>
+    <string name="success_message">Your order is pending confirmation from the restaurants.</string>
+    <string name="success_reference_label">Reference code</string>
+    <string name="success_reference_code">GL-2026-001</string>
+    <string name="success_status_label">Status</string>
+    <string name="success_status_value">Pending</string>
+    <string name="success_payment_label">Payment method</string>
+    <string name="success_payment_value">At pickup</string>
+    <string name="success_total_label">Total</string>
+    <string name="success_total_value">₡4,930</string>
+    <string name="success_view_orders">View my orders</string>
+    <string name="success_back_home">Back to home</string>
+
+
 </resources>
