@@ -9,9 +9,22 @@
     <!-- Home -->
     <string name="home_title">Descubre ofertas de comida</string>
     <string name="home_subtitle">Salva comida y ahorra dinero</string>
-    <string name="search_hint">Buscar ofertas de comida</string>
+    <string name="search_hint">Buscar comida o restaurante</string>
     <string name="available_offers">Ofertas disponibles</string>
     <string name="no_offers">No hay ofertas disponibles</string>
+
+    <string name="home_discount_title">Ahorrá hasta un 25%</string>
+    <string name="home_discount_subtitle">Ofertas listas para retirar cerca de vos</string>
+
+    <string name="burger_name">Hamburguesa sencilla</string>
+    <string name="burger_price">₡2.030</string>
+
+    <string name="pizza_name">Pizza personal</string>
+    <string name="pizza_price">₡2.900</string>
+
+    <string name="second_chance_title">¡Comida con segunda oportunidad!</string>
+    <string name="second_chance_description">Reservá y retirá directamente en el local. Menos desperdicio, más ahorro.</string>
+
 
     <!-- Food offers -->
     <string name="food_details">Detalles de la comida</string>
@@ -26,7 +39,6 @@
     <!-- Restaurants -->
     <string name="restaurants">Restaurantes</string>
     <string name="restaurant_details">Detalles del restaurante</string>
-    <string name="restaurant_address">Dirección</string>
     <string name="restaurant_phone">Número de teléfono</string>
     <string name="view_location">Ver ubicación</string>
     <string name="restaurant_offers">Ofertas del restaurante</string>
@@ -47,4 +59,202 @@
     <string name="error_message">Ocurrió un error</string>
     <string name="retry">Intentar de nuevo</string>
     <string name="back">Volver</string>
+
+
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="food_image_description">Imagen de comida</string>
+
+
+    <string name="cart_title">Mi carrito</string>
+    <string name="cart_quantity">Cantidad: 1</string>
+    <string name="cart_total">Total</string>
+    <string name="continue_to_payment">Continuar al pago</string>
+
+
+    <string name="payment_title">Forma de pago</string>
+    <string name="payment_method">Seleccioná una forma de pago</string>
+    <string name="payment_cash">Efectivo al retirar</string>
+    <string name="payment_card">Tarjeta</string>
+    <string name="confirm_payment">Confirmar pago</string>
+
+
+    <string name="location_title">Ubicación</string>
+    <string name="location_description">Encontrá el restaurante donde podés retirar tu comida.</string>
+    <string name="map_description">Mapa de ubicación del restaurante</string>
+    <string name="restaurant_location">Ubicación del restaurante</string>
+    <string name="restaurant_address">Dirección del restaurante pendiente</string>
+    <string name="back_home">Volver al inicio</string>
+
+
+    <string name="burger_restaurant">Burger King</string>
+    <string name="pizza_restaurant">Pizzería Central</string>
+    <string name="burger_original_price">₡3.500</string>
+    <string name="pizza_original_price">₡5.000</string>
+    <string name="discount_percentage">-42% de ahorro</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_restaurants">Restaurantes</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_profile">Perfil</string>
+
+
+    <string name="filter_screen_title">‹  Buscar y filtrar</string>
+    <string name="filter_question">¿Qué se te antoja?</string>
+    <string name="filter_search_hint">Hamburguesa, pizza, casado...</string>
+    <string name="food_type">Tipo de comida</string>
+    <string name="filter_all">Todas</string>
+    <string name="filter_fast">Rápida</string>
+    <string name="filter_traditional">Típica</string>
+    <string name="filter_pizza">Pizza</string>
+    <string name="price_range">Rango de precio</string>
+    <string name="filter_price_values">₡1.000                                      ₡5.000</string>
+    <string name="filter_location_value">Puntarenas centro</string>
+    <string name="filter_availability">Disponibilidad</string>
+    <string name="filter_available_only">Solo ofertas disponibles</string>
+
+
+    <string name="detail_screen_title">‹  Detalle de la oferta</string>
+    <string name="offer_label">OFERTA</string>
+    <string name="detail_restaurant">Burger King · Comida rápida</string>
+    <string name="price_before">Antes</string>
+    <string name="price_now">Ahora</string>
+    <string name="detail_description_title">Descripción</string>
+    <string name="detail_description">Hamburguesa con queso, papas y bebida. Preparado y conservado por el restaurante.</string>
+    <string name="detail_pickup_title">Retiro en Burger King</string>
+    <string name="detail_pickup_time">Disponible hasta las 7:30 p. m.</string>
+    <string name="quantity_display">−    1    +</string>
+
+
+    <string name="restaurant_location_title">‹  Restaurante y ubicación</string>
+    <string name="restaurant_category_location">Comida típica y rápida · Puntarenas</string>
+    <string name="restaurant_full_address">Puntarenas centro, Costa Rica</string>
+    <string name="restaurant_pickup_note">Retiro presencial de pedidos</string>
+    <string name="map_section_title">Ubicación en el mapa</string>
+    <string name="view_restaurant_offers">Ver ofertas del restaurante</string>
+
+
+    <string name="cart_screen_title">‹  Mi carrito</string>
+    <string name="cart_subtitle">Revisá tus productos antes de reservar.</string>
+    <string name="cart_quantity_controls">− 1 +</string>
+    <string name="cart_order_summary">Resumen del pedido</string>
+    <string name="cart_subtotal">Subtotal (2 productos)                      ₡4.930</string>
+    <string name="cart_service_fee">Tarifa de servicio                                  ₡0</string>
+    <string name="cart_total_amount">Total a pagar                          ₡4.930</string>
+
+
+    <string name="payment_screen_title">‹  Forma de pago</string>
+    <string name="payment_subtitle">Elegí cómo querés pagar tu reserva.</string>
+    <string name="payment_pickup">Pagar al retirar</string>
+    <string name="payment_pickup_description">Efectivo o método aceptado por el local</string>
+    <string name="payment_sinpe">SINPE Móvil</string>
+    <string name="payment_sinpe_description">Pago coordinado con el restaurante</string>
+    <string name="payment_card_description">Opción futura; requiere pasarela</string>
+    <string name="payment_order_total">Total del pedido</string>
+    <string name="payment_total_value">₡4.930</string>
+    <string name="payment_information">El cobro se realiza en el restaurante si elegís pagar al retirar.</string>
+    <string name="payment_review_reservation">Revisar y confirmar reserva</string>
+
+    <string name="payment_pickup_option">Pagar al retirar\nEfectivo o método aceptado por el local</string>
+    <string name="payment_sinpe_option">SINPE Móvil\nPago coordinado con el restaurante</string>
+    <string name="payment_card_option">Tarjeta\nOpción futura; requiere pasarela</string>
+
+
+    <!-- Pantalla de inicio de sesión -->
+    <string name="login_welcome">¡Qué gusto verte!</string>
+    <string name="login_subtitle">Iniciá sesión para reservar tu comida.</string>
+    <string name="login_email">Correo electrónico</string>
+    <string name="login_email_hint">correo@ejemplo.com</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_password_hint">Ingresá tu contraseña</string>
+    <string name="login_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="login_or">o</string>
+    <string name="login_no_account">¿Todavía no tenés cuenta?</string>
+    <string name="login_create_account">Crear cuenta</string>
+    <string name="login_note">Solo necesitás una cuenta al reservar.</string>
+
+
+    <!-- Pantalla de registro -->
+    <string name="register_back">Volver</string>
+    <string name="register_title">Crear una cuenta</string>
+    <string name="register_subtitle">Registrate para reservar ofertas en GastroLoop.</string>
+    <string name="register_full_name">Nombre completo</string>
+    <string name="register_name_hint">Tu nombre y apellido</string>
+    <string name="register_email">Correo electrónico</string>
+    <string name="register_email_hint">correo@ejemplo.com</string>
+    <string name="register_phone">Teléfono</string>
+    <string name="register_phone_hint">8888-8888</string>
+    <string name="register_password">Contraseña</string>
+    <string name="register_password_hint">Mínimo 8 caracteres</string>
+    <string name="register_confirm_password">Confirmar contraseña</string>
+    <string name="register_confirm_hint">Repetí tu contraseña</string>
+    <string name="register_terms">Acepto los términos y condiciones</string>
+    <string name="register_button">Registrarme</string>
+    <string name="register_login_link">¿Ya tenés cuenta? Iniciar sesión</string>
+
+
+    <!-- Pantalla Mi cuenta -->
+    <string name="profile_title">Mi perfil</string>
+    <string name="profile_initials">SC</string>
+    <string name="profile_account">Mi cuenta</string>
+    <string name="profile_email">cliente@ejemplo.com</string>
+    <string name="profile_my_data">Mis datos</string>
+    <string name="profile_my_data_subtitle">Nombre, correo y teléfono</string>
+    <string name="profile_reservations">Mis reservas</string>
+    <string name="profile_reservations_subtitle">Historial y estado de pedidos</string>
+    <string name="profile_favorites">Restaurantes favoritos</string>
+    <string name="profile_favorites_subtitle">Lugares que guardaste</string>
+    <string name="profile_addresses">Direcciones</string>
+    <string name="profile_addresses_subtitle">Ubicaciones para consultar</string>
+    <string name="profile_logout">Cerrar sesión</string>
+
+
+    <!-- Pantalla Mis reservas -->
+    <string name="reservations_title">Mis reservas</string>
+    <string name="reservation_first_id">GL-2026-001</string>
+    <string name="reservation_pending">Pendiente</string>
+    <string name="reservation_first_food">Hamburguesa sencilla</string>
+    <string name="reservation_first_restaurant">Burger King</string>
+    <string name="reservation_first_total">Total: ₡2.030</string>
+    <string name="reservation_view_detail">Ver detalle</string>
+    <string name="reservation_second_id">GL-2026-002</string>
+    <string name="reservation_completed">Retirado</string>
+    <string name="reservation_second_food">Pizza personal</string>
+    <string name="reservation_second_restaurant">Pizzería Central</string>
+    <string name="reservation_second_total">Total: ₡2.900</string>
+
+
+    <!-- Pantalla Confirmar reserva -->
+    <string name="confirm_reservation_title">Confirmar reserva</string>
+    <string name="confirm_review_details">Revisá los detalles</string>
+    <string name="confirm_product_count">2 productos</string>
+    <string name="confirm_first_product">Hamburguesa sencilla</string>
+    <string name="confirm_first_price">₡2.030</string>
+    <string name="confirm_second_product">Pizza personal</string>
+    <string name="confirm_second_price">₡2.900</string>
+    <string name="confirm_total_label">Total</string>
+    <string name="confirm_total_amount">₡4.930</string>
+    <string name="confirm_payment_method">Pago al retirar</string>
+    <string name="confirm_important_title">Importante</string>
+    <string name="confirm_important_message">Son dos restaurantes diferentes. Cada pedido se retira en su local.</string>
+    <string name="confirm_question">¿Confirmar la reserva?</string>
+    <string name="confirm_explanation">Se reservarán las ofertas disponibles. El restaurante validará cada pedido.</string>
+    <string name="confirm_yes_button">Sí, confirmar</string>
+    <string name="confirm_cancel_button">Cancelar</string>
+
+
+    <!-- Pantalla Reserva lista -->
+    <string name="success_title">¡Reserva solicitada!</string>
+    <string name="success_message">Tu pedido está pendiente de confirmación por parte de los restaurantes.</string>
+    <string name="success_reference_label">Código de referencia</string>
+    <string name="success_reference_code">GL-2026-001</string>
+    <string name="success_status_label">Estado</string>
+    <string name="success_status_value">Pendiente</string>
+    <string name="success_payment_label">Forma de pago</string>
+    <string name="success_payment_value">Al retirar</string>
+    <string name="success_total_label">Total</string>
+    <string name="success_total_value">₡4.930</string>
+    <string name="success_view_orders">Ver mis pedidos</string>
+    <string name="success_back_home">Volver al inicio</string>
+
+
 </resources>
