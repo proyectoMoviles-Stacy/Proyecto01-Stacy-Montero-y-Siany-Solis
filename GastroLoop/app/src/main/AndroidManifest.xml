@@ -24,11 +24,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OffersActivity" />
-        <activity android:name=".FoodDetailActivity" />
-        <activity android:name=".CartActivity" />
-        <activity android:name=".PaymentActivity" />
-        <activity android:name=".LocationActivity" />
+        <activity
+            android:name=".OffersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FoodDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
         <activity
             android:name=".FiltersActivity"
             android:exported="false"

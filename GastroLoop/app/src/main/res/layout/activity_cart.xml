@@ -1,4 +1,7 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -55,29 +58,33 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/cartBurgerName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/burger_name"
                         android:textSize="15sp"
                         android:textStyle="bold"
-                        android:textColor="#45281F" />
+                        android:textColor="#45281F"
+                        tools:text="Hamburguesa sencilla" />
 
                     <TextView
+                        android:id="@+id/cartBurgerRestaurant"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/burger_restaurant"
                         android:textSize="12sp"
-                        android:textColor="#8B7B73" />
+                        android:textColor="#8B7B73"
+                        tools:text="Burger King" />
 
                     <TextView
+                        android:id="@+id/cartBurgerPrice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="@string/burger_price"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="#C45C42" />
+                        android:textColor="#C45C42"
+                        tools:text="₡2.030" />
 
+                    <!-- Control visual de cantidad -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -114,29 +121,33 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/cartPizzaName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/pizza_name"
                         android:textSize="15sp"
                         android:textStyle="bold"
-                        android:textColor="#45281F" />
+                        android:textColor="#45281F"
+                        tools:text="Pizza personal" />
 
                     <TextView
+                        android:id="@+id/cartPizzaRestaurant"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/pizza_restaurant"
                         android:textSize="12sp"
-                        android:textColor="#8B7B73" />
+                        android:textColor="#8B7B73"
+                        tools:text="Pizzería Central" />
 
                     <TextView
+                        android:id="@+id/cartPizzaPrice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="@string/pizza_price"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="#C45C42" />
+                        android:textColor="#C45C42"
+                        tools:text="₡2.900" />
 
+                    <!-- Control visual de cantidad -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -150,7 +161,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Resumen -->
+            <!-- Resumen del pedido -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -167,21 +178,25 @@
                     android:textStyle="bold"
                     android:textColor="#45281F" />
 
+                <!-- Subtotal dinámico -->
                 <TextView
+                    android:id="@+id/cartSubtotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="@string/cart_subtotal"
                     android:textSize="14sp"
-                    android:textColor="#8B7B73" />
+                    android:textColor="#8B7B73"
+                    tools:text="Subtotal (2 products)          ₡4.930" />
 
+                <!-- Tarifa de servicio -->
                 <TextView
+                    android:id="@+id/cartServiceFee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="@string/cart_service_fee"
                     android:textSize="14sp"
-                    android:textColor="#8B7B73" />
+                    android:textColor="#8B7B73"
+                    tools:text="Service fee          ₡0" />
 
                 <View
                     android:layout_width="match_parent"
@@ -189,18 +204,20 @@
                     android:layout_marginTop="15dp"
                     android:background="#EADFD8" />
 
+                <!-- Total dinámico -->
                 <TextView
+                    android:id="@+id/cartTotalAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="@string/cart_total_amount"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="#C45C42" />
+                    android:textColor="#C45C42"
+                    tools:text="Total to pay          ₡4.930" />
 
             </LinearLayout>
 
-            <!-- Continuar -->
+            <!-- Botón continuar -->
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -220,6 +237,7 @@
         android:gravity="center"
         android:background="#FFFFFF">
 
+        <!-- Inicio -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -240,6 +258,7 @@
                 android:textSize="11sp" />
         </LinearLayout>
 
+        <!-- Restaurantes -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -260,6 +279,7 @@
                 android:textSize="11sp" />
         </LinearLayout>
 
+        <!-- Carrito -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -281,6 +301,7 @@
                 android:textColor="#C45C42" />
         </LinearLayout>
 
+        <!-- Perfil -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"

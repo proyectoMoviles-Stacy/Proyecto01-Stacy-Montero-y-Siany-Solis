@@ -1,5 +1,7 @@
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -49,37 +51,40 @@
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:background="#C45C42" />
-
             </FrameLayout>
 
-            <!-- Nombre -->
+            <!-- Nombre del producto -->
             <TextView
+                android:id="@+id/detailName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="@string/burger_name"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="#45281F" />
+                android:textColor="#45281F"
+                tools:text="Hamburguesa sencilla" />
 
+            <!-- Restaurante -->
             <TextView
+                android:id="@+id/detailRestaurant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/detail_restaurant"
                 android:textSize="13sp"
-                android:textColor="#8B7B73" />
+                android:textColor="#8B7B73"
+                tools:text="Burger King · Comida rápida" />
 
             <!-- Descuento -->
             <TextView
+                android:id="@+id/detailDiscount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:padding="8dp"
-                android:text="@string/discount_percentage"
                 android:textSize="12sp"
                 android:textColor="#C45C42"
-                android:background="@drawable/second_chance_background" />
+                android:background="@drawable/second_chance_background"
+                tools:text="-42% de ahorro" />
 
             <!-- Precios -->
             <LinearLayout
@@ -88,6 +93,7 @@
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal">
 
+                <!-- Precio original -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -102,14 +108,16 @@
                         android:textColor="#8B7B73" />
 
                     <TextView
+                        android:id="@+id/detailOriginalPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="@string/burger_original_price"
                         android:textSize="18sp"
-                        android:textColor="#8B7B73" />
+                        android:textColor="#8B7B73"
+                        tools:text="₡3.500" />
                 </LinearLayout>
 
+                <!-- Precio rebajado -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -124,15 +132,15 @@
                         android:textColor="#8B7B73" />
 
                     <TextView
+                        android:id="@+id/detailPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="@string/burger_price"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textColor="#C45C42" />
+                        android:textColor="#C45C42"
+                        tools:text="₡2.030" />
                 </LinearLayout>
-
             </LinearLayout>
 
             <!-- Descripción -->
@@ -152,15 +160,16 @@
                     android:textColor="#45281F" />
 
                 <TextView
+                    android:id="@+id/detailDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="@string/detail_description"
                     android:textSize="13sp"
-                    android:textColor="#8B7B73" />
+                    android:textColor="#8B7B73"
+                    tools:text="Hamburguesa con queso, papas y bebida." />
             </LinearLayout>
 
-            <!-- Retiro -->
+            <!-- Información de retiro -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -170,19 +179,21 @@
                 android:background="@drawable/card_background">
 
                 <TextView
+                    android:id="@+id/detailPickupTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/detail_pickup_title"
                     android:textStyle="bold"
-                    android:textColor="#45281F" />
+                    android:textColor="#45281F"
+                    tools:text="Retiro en Burger King" />
 
                 <TextView
+                    android:id="@+id/detailPickupTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="@string/detail_pickup_time"
                     android:textSize="13sp"
-                    android:textColor="#8B7B73" />
+                    android:textColor="#8B7B73"
+                    tools:text="Disponible hasta las 7:30 p. m." />
             </LinearLayout>
 
         </LinearLayout>
@@ -197,6 +208,7 @@
         android:padding="15dp"
         android:background="#FFFFFF">
 
+        <!-- Cantidad -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -205,17 +217,20 @@
             android:textStyle="bold"
             android:textColor="#45281F" />
 
+        <!-- Precio -->
         <TextView
+            android:id="@+id/detailBottomPrice"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="end"
             android:layout_marginEnd="15dp"
-            android:text="@string/burger_price"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#C45C42" />
+            android:textColor="#C45C42"
+            tools:text="₡2.030" />
 
+        <!-- Botón agregar al carrito -->
         <Button
             android:layout_width="150dp"
             android:layout_height="50dp"
