@@ -1,0 +1,55 @@
+
+{
+  "offers": [
+    {
+      "id": 1,
+      "name": {
+        "es": "Hamburguesa sencilla",
+        "en": "Simple burger"
+      },
+      "restaurant": "Burger King",
+      "category": {
+        "es": "Comida rápida",
+        "en": "Fast food"
+      },
+      "address": {
+        "es": "Dirección pendiente de definir",
+        "en": "Address to be confirmed"
+      },
+      "originalPrice": 3500,
+      "discountedPrice": 2030,
+      "discount": 42,
+      "quantityAvailable": 5,
+      "description": {
+        "es": "Hamburguesa con queso, papas y bebida.",
+        "en": "Burger with cheese, fries and a drink."
+      },
+      "pickupTime": "7:30 p. m."
+    },
+    {
+      "id": 2,
+      "name": {
+        "es": "Pizza personal",
+        "en": "Personal pizza"
+      },
+      "restaurant": "Pizzería Central",
+      "category": {
+        "es": "Pizza",
+        "en": "Pizza"
+      },
+      "address": {
+        "es": "Dirección pendiente de definir",
+        "en": "Address to be confirmed"
+      },
+      "originalPrice": 5000,
+      "discountedPrice": 2900,
+      "discount": 42,
+      "quantityAvailable": 8,
+      "description": {
+        "es": "Pizza personal preparada por el restaurante.",
+        "en": "Personal pizza prepared by the restaurant."
+      },
+      "pickupTime": "8:00 p. m."
+    }
+  ]
+}

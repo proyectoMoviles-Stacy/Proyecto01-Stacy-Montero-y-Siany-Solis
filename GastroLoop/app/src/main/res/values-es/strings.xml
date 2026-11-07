@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <string name="app_name">GastroLoop</string>
+    <string name="offers_message">Próximamente verás las ofertas disponibles</string>
+    <string name="welcome_message">¡Bienvenido a GastroLoop!</string>
+    <string name="view_offers">Ver ofertas disponibles</string>
+    <string name="loading">Cargando...</string>
+    <string name="error_message">Ocurrió un error</string>
+    <string name="retry">Intentar de nuevo</string>
+    <string name="back">Volver</string>
+
+    <!-- Home -->
+    <string name="home_title">Descubre ofertas de comida</string>
+    <string name="home_subtitle">Salva comida y ahorra dinero</string>
+    <string name="search_hint">Buscar comida o restaurante</string>
+    <string name="available_offers">Ofertas disponibles</string>
+    <string name="no_offers">No hay ofertas disponibles</string>
+    <string name="home_discount_title">Ahorrá hasta un 25%</string>
+    <string name="home_discount_subtitle">Ofertas listas para retirar cerca de vos</string>
+    <string name="second_chance_title">¡Comida con segunda oportunidad!</string>
+    <string name="second_chance_description">Reservá y retirá directamente en el local. Menos desperdicio, más ahorro.</string>
+
+    <!-- Food offers -->
+    <string name="food_details">Detalles de la comida</string>
+    <string name="original_price">Precio original</string>
+    <string name="discounted_price">Precio con descuento</string>
+    <string name="discount">Descuento</string>
+    <string name="you_save">Ahorrás</string>
+    <string name="quantity_available">Cantidad disponible</string>
+    <string name="pickup_time">Horario de retiro</string>
+    <string name="offer_unavailable">Oferta no disponible</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="food_image_description">Imagen de comida</string>
+    <string name="available_quantity_dynamic">Cantidad disponible: %1$d</string>
+
+    <!-- Restaurants -->
+    <string name="restaurants">Restaurantes</string>
+    <string name="restaurant_details">Detalles del restaurante</string>
+    <string name="restaurant_phone">Número de teléfono</string>
+    <string name="view_location">Ver ubicación</string>
+    <string name="restaurant_offers">Ofertas del restaurante</string>
+
+    <!-- Categories and filters -->
+    <string name="categories">Categorías</string>
+    <string name="all_categories">Todas las categorías</string>
+    <string name="filters">Filtros</string>
+    <string name="apply_filters">Aplicar filtros</string>
+    <string name="clear_filters">Limpiar filtros</string>
+    <string name="fast_food">Comida rápida</string>
+    <string name="traditional_food">Comida típica</string>
+    <string name="desserts">Postres</string>
+    <string name="drinks">Bebidas</string>
+
+    <!-- Cart -->
+    <string name="cart_title">Mi carrito</string>
+    <string name="cart_quantity">Cantidad: 1</string>
+    <string name="cart_total">Total</string>
+    <string name="continue_to_payment">Continuar al pago</string>
+
+    <!-- Payment -->
+    <string name="payment_title">Forma de pago</string>
+    <string name="payment_method">Seleccioná una forma de pago</string>
+    <string name="payment_cash">Efectivo al retirar</string>
+    <string name="payment_card">Tarjeta</string>
+    <string name="confirm_payment">Confirmar pago</string>
+
+    <!-- Location -->
+    <string name="location_title">Ubicación</string>
+    <string name="location_description">Encontrá el restaurante donde podés retirar tu comida.</string>
+    <string name="map_description">Mapa de ubicación del restaurante</string>
+    <string name="restaurant_location">Ubicación del restaurante</string>
+    <string name="back_home">Volver al inicio</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_restaurants">Restaurantes</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Filters screen -->
+    <string name="filter_screen_title">‹  Buscar y filtrar</string>
+    <string name="filter_question">¿Qué se te antoja?</string>
+    <string name="filter_search_hint">Hamburguesa, pizza, casado...</string>
+    <string name="food_type">Tipo de comida</string>
+    <string name="filter_all">Todas</string>
+    <string name="filter_fast">Rápida</string>
+    <string name="filter_traditional">Típica</string>
+    <string name="filter_pizza">Pizza</string>
+    <string name="price_range">Rango de precio</string>
+    <string name="filter_location_hint">Ingresá una ubicación</string>
+    <string name="filter_availability">Disponibilidad</string>
+    <string name="filter_available_only">Solo ofertas disponibles</string>
+
+    <!-- Food detail screen -->
+    <string name="detail_screen_title">‹  Detalle de la oferta</string>
+    <string name="offer_label">OFERTA</string>
+    <string name="price_before">Antes</string>
+    <string name="price_now">Ahora</string>
+    <string name="detail_description_title">Descripción</string>
+    <string name="quantity_display">−    1    +</string>
+
+    <!-- Dynamic food detail labels -->
+    <string name="discount_savings">-%1$d%% de ahorro</string>
+    <string name="pickup_at_restaurant">Retiro en %1$s</string>
+    <string name="available_until">Disponible hasta las %1$s</string>
+
+    <!-- Restaurant location screen -->
+    <string name="restaurant_location_title">‹  Restaurante y ubicación</string>
+    <string name="restaurant_pickup_note">Retiro presencial de pedidos</string>
+    <string name="map_section_title">Ubicación en el mapa</string>
+    <string name="view_restaurant_offers">Ver ofertas del restaurante</string>
+
+    <!-- Cart screen -->
+    <string name="cart_screen_title">‹  Mi carrito</string>
+    <string name="cart_subtitle">Revisá tus productos antes de reservar.</string>
+    <string name="cart_quantity_controls">− 1 +</string>
+    <string name="cart_order_summary">Resumen del pedido</string>
+
+    <!-- Dynamic cart labels -->
+    <string name="cart_subtotal_dynamic">Subtotal (%1$d productos)          %2$s</string>
+    <string name="cart_service_fee_dynamic">Tarifa de servicio          %1$s</string>
+    <string name="cart_total_dynamic">Total a pagar          %1$s</string>
+
+    <!-- Payment screen -->
+    <string name="payment_screen_title">‹  Forma de pago</string>
+    <string name="payment_subtitle">Elegí cómo querés pagar tu reserva.</string>
+    <string name="payment_pickup">Pagar al retirar</string>
+    <string name="payment_pickup_description">Efectivo o método aceptado por el local</string>
+    <string name="payment_sinpe">SINPE Móvil</string>
+    <string name="payment_sinpe_description">Pago coordinado con el restaurante</string>
+    <string name="payment_card_description">Opción futura; requiere pasarela</string>
+    <string name="payment_order_total">Total del pedido</string>
+    <string name="payment_information">El cobro se realiza en el restaurante si elegís pagar al retirar.</string>
+    <string name="payment_review_reservation">Revisar y confirmar reserva</string>
+
+    <!-- Payment options -->
+    <string name="payment_pickup_option">Pagar al retirar\nEfectivo o método aceptado por el local</string>
+    <string name="payment_sinpe_option">SINPE Móvil\nPago coordinado con el restaurante</string>
+    <string name="payment_card_option">Tarjeta\nOpción futura; requiere pasarela</string>
+
+</resources>
