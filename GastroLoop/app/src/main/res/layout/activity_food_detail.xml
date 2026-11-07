@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9F4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Encabezado -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_screen_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#45281F" />
+
+            <!-- Imagen de la oferta -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="25dp"
+                android:background="#F5EAE3">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:contentDescription="@string/food_image_description" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:padding="8dp"
+                    android:text="@string/offer_label"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="#C45C42" />
+            </FrameLayout>
+
+            <!-- Nombre del producto -->
+            <TextView
+                android:id="@+id/detailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#45281F"
+                tools:text="Hamburguesa sencilla" />
+
+            <!-- Restaurante -->
+            <TextView
+                android:id="@+id/detailRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="#8B7B73"
+                tools:text="Burger King · Comida rápida" />
+
+            <!-- Descuento -->
+            <TextView
+                android:id="@+id/detailDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:textColor="#C45C42"
+                android:background="@drawable/second_chance_background"
+                tools:text="-42% de ahorro" />
+
+            <!-- Precios -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <!-- Precio original -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_before"
+                        android:textSize="12sp"
+                        android:textColor="#8B7B73" />
+
+                    <TextView
+                        android:id="@+id/detailOriginalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#8B7B73"
+                        tools:text="₡3.500" />
+                </LinearLayout>
+
+                <!-- Precio rebajado -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_now"
+                        android:textSize="12sp"
+                        android:textColor="#8B7B73" />
+
+                    <TextView
+                        android:id="@+id/detailPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#C45C42"
+                        tools:text="₡2.030" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Descripción -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_description_title"
+                    android:textStyle="bold"
+                    android:textColor="#45281F" />
+
+                <TextView
+                    android:id="@+id/detailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textColor="#8B7B73"
+                    tools:text="Hamburguesa con queso, papas y bebida." />
+            </LinearLayout>
+
+            <!-- Información de retiro -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    android:id="@+id/detailPickupTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#45281F"
+                    tools:text="Retiro en Burger King" />
+
+                <TextView
+                    android:id="@+id/detailPickupTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textColor="#8B7B73"
+                    tools:text="Disponible hasta las 7:30 p. m." />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:background="#FFFFFF">
+
+        <!-- Cantidad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_display"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/detailBottomPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C45C42"
+            tools:text="₡2.030" />
+
+        <!-- Botón agregar al carrito -->
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/add_to_cart"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C45C42" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF9F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_screen_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <!-- Búsqueda -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/filter_question"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:hint="@string/filter_search_hint"
+            android:inputType="text"
+            android:textSize="13sp" />
+
+        <!-- Tipo de comida -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/food_type"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_all"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/filterFast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Comida rápida" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_traditional" />
+
+                <RadioButton
+                    android:id="@+id/filterPizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Pizza" />
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <!-- Precio -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/price_range"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_background">
+
+            <!-- Rango de precios desde JSON -->
+            <TextView
+                android:id="@+id/filterPriceValues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#45281F"
+                tools:text="₡2.030                         ₡2.900" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="65"
+                android:progressTint="#C45C42"
+                android:thumbTint="#C45C42" />
+
+        </LinearLayout>
+
+        <!-- Ubicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/location_title"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:hint="@string/filter_location_hint"
+            android:inputType="text"
+            android:textSize="13sp"
+            tools:text="Puntarenas" />
+
+        <!-- Disponibilidad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/filter_availability"
+            android:textStyle="bold"
+            android:textColor="#45281F" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/card_background"
+            android:text="@string/filter_available_only"
+            android:checked="true"
+            android:thumbTint="#FFFFFF"
+            android:trackTint="#438B70" />
+
+        <!-- Botones -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/apply_filters"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C45C42" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/clear_filters"
+            android:textColor="#C45C42"
+            android:backgroundTint="#FFF9F4" />
+
+    </LinearLayout>
+</ScrollView>

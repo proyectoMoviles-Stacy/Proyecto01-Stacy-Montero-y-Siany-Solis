@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9F4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Encabezado -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cart_screen_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#45281F" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/cart_subtitle"
+                android:textSize="12sp"
+                android:textColor="#8B7B73" />
+
+            <!-- Hamburguesa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:contentDescription="@string/food_image_description" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cartBurgerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#45281F"
+                        tools:text="Hamburguesa sencilla" />
+
+                    <TextView
+                        android:id="@+id/cartBurgerRestaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#8B7B73"
+                        tools:text="Burger King" />
+
+                    <TextView
+                        android:id="@+id/cartBurgerPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#C45C42"
+                        tools:text="₡2.030" />
+
+                    <!-- Control visual de cantidad -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:text="@string/cart_quantity_controls"
+                        android:textColor="#FFFFFF"
+                        android:background="#45281F" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Pizza -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:contentDescription="@string/food_image_description" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cartPizzaName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#45281F"
+                        tools:text="Pizza personal" />
+
+                    <TextView
+                        android:id="@+id/cartPizzaRestaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#8B7B73"
+                        tools:text="Pizzería Central" />
+
+                    <TextView
+                        android:id="@+id/cartPizzaPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#C45C42"
+                        tools:text="₡2.900" />
+
+                    <!-- Control visual de cantidad -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:text="@string/cart_quantity_controls"
+                        android:textColor="#FFFFFF"
+                        android:background="#45281F" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Resumen del pedido -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cart_order_summary"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#45281F" />
+
+                <!-- Subtotal dinámico -->
+                <TextView
+                    android:id="@+id/cartSubtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:textColor="#8B7B73"
+                    tools:text="Subtotal (2 products)          ₡4.930" />
+
+                <!-- Tarifa de servicio -->
+                <TextView
+                    android:id="@+id/cartServiceFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#8B7B73"
+                    tools:text="Service fee          ₡0" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#EADFD8" />
+
+                <!-- Total dinámico -->
+                <TextView
+                    android:id="@+id/cartTotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#C45C42"
+                    tools:text="Total to pay          ₡4.930" />
+
+            </LinearLayout>
+
+            <!-- Botón continuar -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/continue_to_payment"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#C45C42" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Menú inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF">
+
+        <!-- Inicio -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home"
+                android:contentDescription="@string/nav_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_home"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Restaurantes -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_restaurant"
+                android:contentDescription="@string/nav_restaurants" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_restaurants"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Carrito -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cart"
+                android:contentDescription="@string/nav_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_cart"
+                android:textSize="11sp"
+                android:textColor="#C45C42" />
+        </LinearLayout>
+
+        <!-- Perfil -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_profile"
+                android:contentDescription="@string/nav_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_profile"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
