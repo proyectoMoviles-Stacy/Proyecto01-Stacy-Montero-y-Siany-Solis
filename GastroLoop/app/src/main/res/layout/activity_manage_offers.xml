@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Food Offers"
+            android:textColor="#75452F"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add and manage the available food offers."
+            android:textColor="#755F54"
+            android:textSize="14sp"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New offer"
+            android:textColor="#75452F"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <EditText
+            android:id="@+id/offerNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Offer name"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/offerDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2" />
+
+        <EditText
+            android:id="@+id/originalPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Original price"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/discountPercentageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Discount Percentage (%)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/quantityInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Available quantity"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pickupStartInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup start time (example: 12:00)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pickupEndInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup end time (example: 14:00)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/addOfferButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add offer"
+            android:backgroundTint="#B96D4B"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registered offers"
+            android:textColor="#75452F"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/offersContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>

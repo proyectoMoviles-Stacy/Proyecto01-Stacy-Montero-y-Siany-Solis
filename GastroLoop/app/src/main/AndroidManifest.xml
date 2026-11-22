@@ -56,6 +56,9 @@
             android:name=".ReservationSuccessActivity"
             android:exported="false" />
 
+        <activity android:name=".ManageOffersActivity"
+            android:exported="false"/>
+
 
     </application>
 

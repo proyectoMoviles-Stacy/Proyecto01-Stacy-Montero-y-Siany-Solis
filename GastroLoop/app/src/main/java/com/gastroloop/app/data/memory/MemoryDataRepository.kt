@@ -39,22 +39,7 @@ class MemoryDataRepository : FoodRepository {
             )
         )
 
-        // Sample food offer
-        foodOffers.add(
-            FoodOffer(
-                id = 1,
-                restaurantId = 1,
-                categoryId = 1,
-                name = "Chicken Casado",
-                description = "Rice, beans, chicken and salad",
-                originalPrice = 3500.0,
-                discountedPrice = 2000.0,
-                quantityAvailable = 3,
-                imageUrl = "",
-                pickupStartTime = "12:00",
-                pickupEndTime = "14:00"
-            )
-        )
+
     }
 
 

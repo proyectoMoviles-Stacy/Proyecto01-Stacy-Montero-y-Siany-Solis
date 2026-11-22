@@ -1,6 +1,8 @@
 package com.gastroloop.app
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
 
 class MainActivity : ComponentActivity() {
@@ -9,5 +11,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
+
+        val manageOffersButton =
+            findViewById<Button>(R.id.manageOffersButton)
+
+        manageOffersButton.setOnClickListener {
+            val intent = Intent(this, ManageOffersActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
