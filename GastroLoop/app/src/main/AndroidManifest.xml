@@ -37,12 +37,36 @@
             android:name=".PaymentActivity"
             android:exported="false" />
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".LocationActivity"
             android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReservationsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ConfirmReservationActivity"
+            android:exported="false" />
+
         <activity
             android:name=".FiltersActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+
+        <activity
+            android:name=".ReservationSuccessActivity"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>
