@@ -1,4 +1,7 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -47,34 +50,43 @@
             android:textStyle="bold"
             android:textColor="#45281F" />
 
-        <RadioGroup
+        <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/filter_all"
-                android:checked="true" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/filter_fast" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_all"
+                    android:checked="true" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/filter_traditional" />
+                <RadioButton
+                    android:id="@+id/filterFast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Comida rápida" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/filter_pizza" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_traditional" />
 
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/filterPizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Pizza" />
+
+            </RadioGroup>
+        </HorizontalScrollView>
 
         <!-- Precio -->
         <TextView
@@ -93,12 +105,14 @@
             android:orientation="vertical"
             android:background="@drawable/card_background">
 
+            <!-- Rango de precios desde JSON -->
             <TextView
+                android:id="@+id/filterPriceValues"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/filter_price_values"
                 android:textStyle="bold"
-                android:textColor="#45281F" />
+                android:textColor="#45281F"
+                tools:text="₡2.030                         ₡2.900" />
 
             <SeekBar
                 android:layout_width="match_parent"
@@ -124,9 +138,10 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/card_background"
             android:padding="12dp"
-            android:text="@string/filter_location_value"
+            android:hint="@string/filter_location_hint"
             android:inputType="text"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            tools:text="Puntarenas" />
 
         <!-- Disponibilidad -->
         <TextView
