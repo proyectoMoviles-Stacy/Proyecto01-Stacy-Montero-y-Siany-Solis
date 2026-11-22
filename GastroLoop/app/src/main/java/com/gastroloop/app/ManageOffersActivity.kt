@@ -24,6 +24,7 @@ class ManageOffersActivity : Activity() {
     private lateinit var offersContainer: LinearLayout
     private lateinit var addOfferButton: Button
 
+    private var selectedOfferId: Int? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_manage_offers)
@@ -39,9 +40,12 @@ class ManageOffersActivity : Activity() {
         addOfferButton = findViewById(R.id.addOfferButton)
 
         addOfferButton.setOnClickListener {
-            addOffer()
+            if (selectedOfferId == null) {
+                addOffer()
+            } else {
+                updateOffer()
+            }
         }
-
         loadOffers()
     }
 
@@ -96,6 +100,53 @@ class ManageOffersActivity : Activity() {
         clearFields()
         loadOffers()
     }
+    private fun updateOffer() {
+        val offerId = selectedOfferId ?: return
+
+        val name = offerNameInput.text.toString().trim()
+        val description = offerDescriptionInput.text.toString().trim()
+        val originalPrice = originalPriceInput.text.toString().toDoubleOrNull()
+        val discountPercentage = discountPercentageInput.text.toString().toDoubleOrNull()
+        val quantity = quantityInput.text.toString().toIntOrNull()
+        val pickupStart = pickupStartInput.text.toString().trim()
+        val pickupEnd = pickupEndInput.text.toString().trim()
+
+        if (name.isEmpty() || description.isEmpty() ||
+            originalPrice == null || discountPercentage == null ||
+            quantity == null || pickupStart.isEmpty() || pickupEnd.isEmpty()
+        ) {
+            Toast.makeText(this, "Please complete all fields", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        if (originalPrice <= 0 || discountPercentage < 0 ||
+            discountPercentage >= 100 || quantity <= 0
+        ) {
+            Toast.makeText(this, "Please enter valid values", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val oldOffer = repository.getFoodOfferById(offerId) ?: return
+
+        val updatedOffer = oldOffer.copy(
+            name = name,
+            description = description,
+            originalPrice = originalPrice,
+            discountedPrice = originalPrice * (1 - discountPercentage / 100),
+            quantityAvailable = quantity,
+            pickupStartTime = pickupStart,
+            pickupEndTime = pickupEnd
+        )
+
+        repository.updateFoodOffer(updatedOffer)
+
+        Toast.makeText(this, "Offer updated successfully", Toast.LENGTH_SHORT).show()
+
+        selectedOfferId = null
+        addOfferButton.text = "Add offer"
+        clearFields()
+        loadOffers()
+    }
 
     private fun loadOffers() {
 
@@ -122,8 +173,50 @@ class ManageOffersActivity : Activity() {
 
             offerText.textSize = 15f
             offerText.setPadding(16, 16, 16, 16)
+            val editButton = Button(this)
+            editButton.text = "Edit"
 
+            editButton.setOnClickListener {
+                selectedOfferId = offer.id
+
+                offerNameInput.setText(offer.name)
+                offerDescriptionInput.setText(offer.description)
+                originalPriceInput.setText(offer.originalPrice.toString())
+                discountPercentageInput.setText(
+                    (((offer.originalPrice - offer.discountedPrice) / offer.originalPrice) * 100).toString()
+                )
+                quantityInput.setText(offer.quantityAvailable.toString())
+                pickupStartInput.setText(offer.pickupStartTime)
+                pickupEndInput.setText(offer.pickupEndTime)
+
+                addOfferButton.text = "Update offer"
+            }
             offersContainer.addView(offerText)
+            offersContainer.addView(editButton)
+            val deleteButton = Button(this)
+            deleteButton.text = "Delete"
+
+            deleteButton.setOnClickListener {
+                android.app.AlertDialog.Builder(this)
+                    .setTitle("Delete offer")
+                    .setMessage("Are you sure you want to delete ${offer.name}?")
+                    .setPositiveButton("Yes") { _, _ ->
+                        repository.deleteFoodOffer(offer.id)
+
+                        if (selectedOfferId == offer.id) {
+                            selectedOfferId = null
+                            addOfferButton.text = "Add offer"
+                            clearFields()
+                        }
+
+                        Toast.makeText(this, "Offer deleted successfully", Toast.LENGTH_SHORT).show()
+                        loadOffers()
+                    }
+                    .setNegativeButton("No", null)
+                    .show()
+            }
+
+            offersContainer.addView(deleteButton)
         }
     }
 
